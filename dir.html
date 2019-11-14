@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <style>
+  .vkl{
+    float:left;
+    width:140px;
+    height:28px;
+    background:#E5BA83;
+    color:white;
+    font-size:20px;
+    border-right:1px solid white;
+    padding-left:10px;
+}
+#content{
+    width:603px;
+    height:100px;
+    background:#CCA675;
+}
+.selected{
+   background:#CCA675;
+}
+  </style>
+</head>
+<body>
+  <h2>jQuery - CSS</h2>
+      <div id="vkladki">
+          <div class="vkl" id="vkladka1" onClick="chang('#vkladka1');">Вкладка 1</div>
+          <div class="vkl" id="vkladka2" onClick="chang('#vkladka2');">Вкладка 2</div>
+          <div class="vkl" id="vkladka3" onClick="chang('#vkladka3');">Вкладка 3</div>
+          <div class="vkl" id="vkladka4" onClick="chang('#vkladka4');">Вкладка 4</div>
+      </div>
+      <div style="clear: both"></div>
+      <div id="content">
+		ffffffhjfj
+	  </div>
+      <div style="clear: both"></div>
+<script>
+    function chang(s){
+    $('.selected').removeClass('selected');
+    $(s).addClass('selected');
+	$("#content").load("admin.php?action=catalog&cat=diagnosis");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+/* =============================================================================
+   Dentition
+   ========================================================================== */
+
+.dentition{
+	float:left;
+}
+.toothformul{
+	width:900px;
+	height:405px;
+	
+}
+#infopanel{
+	float:right;
+	width:300px;
+}
+/* =============================================================================
+   Основание
+   ========================================================================== */
+.tooth{
+	height:190px;
+	width: 56px;
+	
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	background: whiteSmoke;
+
+	position: relative;
+	vertical-align: middle;
+
+	float:left;
+}
+	.upper .tooth:hover{
+		-webkit-transition: all 0.3s ease-in;
+		-moz-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		-ms-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
+		
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+		box-shadow: 0 -10px 20px rgba(0,0,0,0.5); /* Параметры тени */
+		z-index: 200;
+	}
+	.lower .tooth:hover{
+		-webkit-transition: all 0.3s ease-in;
+		-moz-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		-ms-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
+
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+		box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Параметры тени */
+		z-index: 200;
+	}
+		
+	input[type=radio]{display:none;}
+		input[type=radio]:hover + .tooth {
+			background: #dfdfdf;
+		}
+		input[type=radio]:checked + .tooth{
+			background: #e7f5f7;
+		}
+		input[type=radio]:checked + .uptooth {
+			-webkit-transition: all 0.3s ease-in;
+			-moz-transition: all 0.3s ease-in;
+			-o-transition: all 0.3s ease-in;
+			-ms-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+		
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+			box-shadow: 0 -10px 20px rgba(0,0,0,0.5); /* Параметры тени */
+			z-index: 201;
+		}
+		input[type=radio]:checked + .lotooth{
+	
+			-webkit-transition: all 0.3s ease-in;
+			-moz-transition: all 0.3s ease-in;
+			-o-transition: all 0.3s ease-in;
+			-ms-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+			box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Параметры тени */
+			z-index: 201;
+		}
+
+/* =============================================================================
+   Зуб
+   ========================================================================== */	
+.tooth img{
+	padding:0px;
+	margin: auto;
+}
+
+.zyb{
+	position: relative;
+	height: 96px;
+	width: 44px;
+	z-index: 200;
+	background-color: #635dad;
+	margin-left: 5px;
+}
+
+.lower .zyb{
+	position: relative;
+	height: 96px;
+	width: 44px;
+	z-index: 200;
+	background-color: #635dad;
+	padding-top:3px;
+	top: 91px;
+	margin-left: 5px;
+}
+
+.tooth .zyb img{
+	
+	color: transparent;
+}
+.t18, .t17, .t16, .t26, .t27, .t28{
+	padding-top:16px;
+	margin-left: 5px;
+}
+.t15, .t25{
+	margin-left:12px;
+	padding-bottom:9px;
+	padding-top:9px;
+	width: 27px;
+}
+ .t14, .t24{
+	margin-left:12px;
+	padding-bottom:9px;
+	padding-top:9px;
+	width: 27px;
+}
+ .t13, .t23{
+	margin-left:12px;
+	padding-bottom:13px;
+	padding-top:5px;
+	width: 30px;
+}
+.t12, .t22{
+	margin-left:12px;
+	padding-bottom:1px;
+	padding-top:17px;
+	width: 30px;
+}
+.t11, .t21{
+	margin-left:12px;
+	padding-bottom:15px;
+	padding-top:4px;
+	width: 34px;
+}
+
+/* =============================================================================
+   Дёсна
+   ========================================================================== */
+   
+.tooth .decna{
+	left: 0px;
+	
+	position: absolute;
+	color: blue;
+}
+
+.upper .tooth .dec1{top: 18px;height:10px;width:55px; background-color:red;color: red;z-index: 100;}
+.upper .tooth .dec2{top: 55px;height:10px;width:55px; background-color:yellow;color: yellow;z-index: 100;}
+.upper .tooth .dec3{top: 80px;height:10px;width:55px; background-color:green;color: green;z-index: 100;}
+.upper .tooth .dec4{top: 120px;height:10px;width:55px; text-align: center;}
+
+.lower .tooth .dec1{top: 165px;height:10px;width:55px; background-color:red;color: red;z-index: 100;}
+.lower .tooth .dec2{top: 130px;height:10px;width:55px; background-color:yellow;color: yellow;z-index: 100;}
+.lower .tooth .dec3{top: 100px;height:10px;width:55px; background-color:green;color: green;z-index: 100;}
+.lower .tooth .dec4{top: 60px;height:10px;width:55px; text-align: center;}
+
+.tooth .dec1:hover{background-color: #fff;z-index: 300;}
+.tooth .dec2:hover{background-color: #fff;z-index: 300;}
+.tooth .dec3:hover{background-color: #fff;z-index: 300;}
+
+/* =============================================================================
+   области коронок
+   ========================================================================== */
+
+.upper .tooth .tootharea{
+	position: absolute;
+	top: 133px;
+	height:40px;
+	width:40px;
+	text-align: center;
+	padding:8px;
+	/* background-color:green; */
+}
+.lower .tooth .tootharea{
+	position: absolute;
+	top: 1px;
+	height:40px;
+	width:40px;
+	text-align: center;
+	padding:8px;
+	/* background-color:green; */
+}
+.tooth .tootharea .toothareatop{
+	
+	background: #31ff31;
+	border: 1px solid black;
+	height:10px;
+	margin-left: 11px;
+	width:16px;
+	
+}
+.tooth .tootharea .tootharealeft{
+	background: #ff3031;
+	border: 1px solid black;
+	
+	height:14px;
+	float:left;
+	width:10px;
+}
+.tooth .tootharea .toothareacenter{
+	background: #31cbff;
+	
+	height:16px;
+	float:left;
+	width:16px;
+}
+.tooth .tootharea .tootharearight{
+	background: #3130ff;
+	border: 1px solid black;
+	height:14px;
+	float:right;
+	width:10px;
+}
+
+.tooth .tootharea .toothareadown{
+	background: #ffff31;
+	border: 1px solid black;
+	height:10px;
+	margin-right: 11px;
+	float:right;
+	width:16px;
+}
+
+.tooth .tootharea .toothareatop:hover{
+	opacity: 0.5;
+}
+.tooth .tootharea .tootharealeft:hover{
+	opacity: 0.5;
+}
+.tooth .tootharea .toothareacenter:hover{
+	opacity: 0.5;
+}
+.tooth .tootharea .tootharearight:hover{
+	opacity: 0.5;
+}
+
+.tooth .tootharea .toothareadown:hover{
+	opacity: 0.5;
+}
+
+input[type=checkbox] {
+	display:none;
+}
+input[type=checkbox]:checked + label .ttharea {
+	background: black;
+}
+
+#toothmap .seredina:hover{background-color: red;}
+area:hover {background: #cccccc; color: #0099ff; border: solid 1px #993366}
+
+
+/* =============================================================================
+   Основание
+   ========================================================================== */
+
+.blockColumnsx3 {
+width: 100%;
+float: left;
+}
+.colx3 {
+float: left;
+overflow-y: scroll;
+height:300px;
+width: 29%;
+}
+.col2 {
+width: 29%;
+float: left;
+}
+.col3 {
+width: 29%;
+float: left;
+}
+.col {
+    background: none repeat scroll 0 0 #FFFFFF;
+   
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; -khtml-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.1); -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.1); -khtml-box-shadow: 0px 1px 4px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.1); box-shadow:0px 1px 4px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.1);
+        -moz-border-radius:4px;
+    margin: 20px 3px 25px 2px;
+    padding: 1em;
+    position: relative;
+   
+border-collapse:separate !important;
+}
+.col:before, .col:after {
+    content:"";
+        position:absolute;
+        z-index:-2;
+        bottom:15px;
+        
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); -khtml-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);
+    -webkit-transform:rotate(-3deg);
+       -moz-transform:rotate(-3deg);
+        -ms-transform:rotate(-3deg);
+         -o-transform:rotate(-3deg);
+            -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg);transform:rotate(-3deg);
+}
+.col:after {
+        -webkit-transform:rotate(3deg);
+       -moz-transform:rotate(3deg);
+        -ms-transform:rotate(3deg);
+         -o-transform:rotate(3deg);
+            -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg);transform:rotate(3deg);
+}
+
+.color{
+	height:20px;
+	width:20px;
+}

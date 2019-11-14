@@ -1,0 +1,1 @@
+<?php	require_once ('include/menu.php');?><div class="box"><?php	echo 'Просмотр медицинской информации<br/>';	$id = isset($_GET['patientId']) ? $_GET['patientId'] : null ;	echo '<a href="?action=patients&patientId='.$id.'&tab=editMedicalInfo">Edit</a>';?></div>

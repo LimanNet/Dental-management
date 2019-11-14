@@ -1,0 +1,1 @@
+<?phprequire_once( CLASS_PATH . "/Patient.php" );class patients extends Patient{			private $tab = null;		function __construct(){		if($_REQUEST){			var_dump($_REQUEST);		}	}}?>

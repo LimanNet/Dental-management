@@ -1,0 +1,9 @@
+dict_card_index\TForm\
+ListBox1\TAdvStringGrid\0\32\295\504\43\160\52\
+GB_Bill_Grid\TGroupBox\0\334\1007\200\
+GB_Profinspection_Grid\TGroupBox\0\0\1007\200\
+Payment_Grid\TAdvStringGrid\2\15\1003\517\64\64\64\64\64\64\64\64\
+Bill_Grid_Works\TAdvStringGrid\2\15\1003\183\64\64\64\64\64\
+Bill_Grid\TAdvStringGrid\2\15\1003\312\64\64\64\64\64\64\64\64\
+Profinspection_Grid\TAdvStringGrid\2\15\1003\183\64\64\64\64\
+Guarantee_Grid\TAdvStringGrid\2\15\1003\314\64\64\64\64\
